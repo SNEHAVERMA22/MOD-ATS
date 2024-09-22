@@ -59,24 +59,36 @@ submit4 = st.button("Keywords Missing in Resume")
 
 if submit1:
     if uploaded_file is not None:
-        text=input_pdf_text(uploaded_file)
-        response=get_gemini_repsonse(input_prompt1,text,jd)
-        st.subheader(response)
+            text=input_pdf_text(uploaded_file)
+            response=get_gemini_repsonse(input_prompt1,text,jd)
+            st.subheader(response)
+        
     else:
         st.write("Please uplaod the resume")
         
 elif submit3:
     if uploaded_file is not None:
-        text=input_pdf_text(uploaded_file)
-        response=get_gemini_repsonse(input_prompt3,text,jd)
-        st.write(response)
+        if jd is not None:
+            text=input_pdf_text(uploaded_file)
+            response=get_gemini_repsonse(input_prompt3,text,jd)
+            st.write(response)
+        else:
+            st.write("Please enter the job description to match")    
+            
+        
     else:
         st.write("Please uplaod the resume")
         
 elif submit4:
     if uploaded_file is not None:
-        text=input_pdf_text(uploaded_file)
-        response=get_gemini_repsonse(input_prompt4,text,jd)
-        st.write(response)
+        if jd is not None:
+            text=input_pdf_text(uploaded_file)
+            response=get_gemini_repsonse(input_prompt4,text,jd)
+            st.write(response)
+            
+        else:
+            st.write("Please enter job description to find missing keywords")
+            print("Please enter job description to find missing keywords")
+        
     else:
         st.write("Please uplaod the resume")
