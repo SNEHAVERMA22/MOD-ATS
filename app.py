@@ -22,7 +22,7 @@ def input_pdf_text(uploaded_file):
         text+=str(page.extract_text())
     return text
 
-#Prompt Template
+
 
 input_prompt1 = """
  You are an experienced Technical Human Resource Manager,your task is to review the provided resume against the job description. 
