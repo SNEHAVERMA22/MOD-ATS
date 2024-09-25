@@ -42,10 +42,10 @@ input_prompt4 = """
 You are an skilled ATS (Applicant Tracking System) scanner with a deep understanding of data science and ATS functionality, 
 your task is to evaluate the resume against the provided job description. As a Human Resource manager,
  assess the compatibility of the resume with the role. Give me what are the keywords that are missing
- Also, provide recommendations for enhancing the candidate's skills and identify which areas require further development.
+ Also, provide recommendations for enhancing the candidate's skills and identify which areas require further development in future.
 """
 
-## streamlit app
+
 st.title("Smart ATS")
 st.text("Improve Your Resume ATS")
 jd=st.text_area("Paste the Job Description")
