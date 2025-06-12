@@ -17,7 +17,10 @@ An intelligent **Resume vs Job Description Analyzer** built with **Google Gemini
 
 
 ---
+## LIVE DEPLOYED URL
 
+https://sneha-smart-resume-analyser.streamlit.app/
+---
 ## 📸 Demo
 
 ![📸 Demo](./Screenshot%20(37).png)
