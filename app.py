@@ -9,7 +9,8 @@ import re
 
 load_dotenv()
 
-genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
+# Use Streamlit secrets
+genai.configure(api_key=st.secrets["GOOGLE_API_KEY"])
 
 def get_gemini_response(prompt,text,input):
     model=genai.GenerativeModel('gemini-2.0-flash-exp')
