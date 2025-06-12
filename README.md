@@ -20,7 +20,7 @@ An intelligent **Resume vs Job Description Analyzer** built with **Google Gemini
 
 ## 📸 Demo
 
-![Demo Screenshot](Screenshot (37).png)  
+(./Screenshot (37).png)  
 
 
 ## 🧠 How It Works
